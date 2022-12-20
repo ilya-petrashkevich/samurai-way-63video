@@ -5,7 +5,7 @@ import {
     follow,
     setCurrentPage,
     setUsers,
-    setUsersTotalCount,
+    setUsersTotalCount, toggleFollowingProgress,
     toggleIsFetching,
     unfollow,
     usersReducer,
@@ -210,7 +210,8 @@ export type ActionsTypes =
     | ReturnType<typeof setCurrentPage>
     | ReturnType<typeof setUsersTotalCount>
     | ReturnType<typeof toggleIsFetching>
-    | ReturnType<typeof setAuthUserData>;
+    | ReturnType<typeof setAuthUserData>
+    | ReturnType<typeof toggleFollowingProgress>;
 
 
 // export const store: StoreType = {
